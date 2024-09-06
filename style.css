@@ -82,7 +82,7 @@ h2{
   display: flex;
   gap: 48px;
 }
-.repo-button, .contatos  {
+.repo-button, .contatos, .linkContato  {
   display: block;
   padding: 10px 20px;
   font-size: 16px;
