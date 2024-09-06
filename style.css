@@ -1,18 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  background-color: #101010;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier Prime";
+  margin: 0;
+  overflow-wrap: break-word;
+  width: 100%;
+}
 p, h2{
-    text-align: center;
+  text-align: center;
 }
 
 header{
-    text-align: center;
+  text-align: center;
+  display: flex;
+  gap: 72px;
+  justify-content: center;
+  padding-top: 16px;
 }
 
 .foto{
-    width: 200px !important;
-    height: 200px !important;
-    background-color: gray;
-    margin: auto;
-    border-radius: 10px;
+  width: 200px !important;
+  height: 200px !important;
+  margin: 100px auto 32px auto;
+  border-radius: 16px;
 }
 
+a{
+  color: #D8B1FF;
+  font-family: "Courier Prime";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+p{
+  color: #F5F5F5;
+  text-align: center;
+  font-family: "Courier Prime";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 150px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.projetos{
+  display: flex;
+  gap: 48px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+h2{
+  margin-bottom: 8px;
+}
+
+#repos-container, #repos-container-etec,  #repos-container-fatec, .contatos {
+  display: flex;
+  gap: 48px;
+}
+.repo-button, .contatos  {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #24292e; /* Cor de fundo do botão do GitHub */
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.repo-button:hover, .contatos:hover {
+  border: solid 1px hsl(264, 88%, 58%);
+  transform: scale(1.08);
+}
+.repo-button:active, .contatos:active {
+  background-color: #444;
+}
+
+.perfil{
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.imgCurso, .fotoTcc{
+  width: 800px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+  .imgCurso {
+    scale: 0.5;
+  }
+
+  .projetos, #repos-container, #repos-container-etec,  #repos-container-fatec {
+    flex-direction: column;
+  }
+}
 
 
