@@ -40,6 +40,9 @@ a{
   line-height: normal;
   text-decoration: none;
 }
+a:hover{
+  color:#fff;
+}
 
 p{
   color: #F5F5F5;
@@ -125,6 +128,8 @@ h2{
 #sobremim{
   margin: 20px 0px 0px 0px ;
 }
+
+
 @media (max-width: 720px) {
   .imgCurso {
     scale: 0.5;
