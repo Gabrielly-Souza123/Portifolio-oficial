@@ -76,30 +76,35 @@ button{
 
 h2{
   margin-bottom: 8px;
+  color: #D8B1FF;
 }
 
-#repos-container, #repos-container-etec,  #repos-container-fatec, .contatos {
+#repos-container, #repos-container-etec,  #repos-container-fatec, .contatos, .projetoTCC {
   display: flex;
   gap: 48px;
 }
-.repo-button, .contatos, .linkContato  {
+.repo-button, .contatos, .linkContato,  .linkTcc {
   display: block;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: #24292e; /* Cor de fundo do botão do GitHub */
+  background-color: #24292e; 
   border: none;
   border-radius: 6px;
   text-decoration: none;
   text-align: center;
   transition: background-color 0.3s, transform 0.2s;
 }
-.repo-button:hover, .contatos:hover {
+
+.projetoTCC{
+  border-radius: 6px;
+}
+.repo-button:hover, .contatos:hover, .projetoTCC:hover {
   border: solid 1px hsl(264, 88%, 58%);
   transform: scale(1.08);
 }
-.repo-button:active, .contatos:active {
+.repo-button:active, .contatos:active, .projetoTCC:active {
   background-color: #444;
 }
 
@@ -114,8 +119,12 @@ h2{
   height: auto;
   flex-shrink: 0;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
+#sobremim{
+  margin: 20px 0px 0px 0px ;
+}
 @media (max-width: 720px) {
   .imgCurso {
     scale: 0.5;
